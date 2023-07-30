@@ -3,4 +3,40 @@
     height: 175px;
     background-color: red;
     margin: 18px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradientBlock::after{
+    content: 'CLICK TO COPY';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    transition: top .25s, font-size .25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(168, 168, 168, 0.219);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    text-shadow: 0 0 2px black;
+    letter-spacing: 1px;
+}
+
+.gradientBlock:hover::after{
+    content: 'CLICK TO COPY';
+    font-size: 1.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.alert{
+    z-index: 1000;
+    height: 57px;
 }

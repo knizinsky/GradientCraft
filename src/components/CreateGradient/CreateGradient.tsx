@@ -29,6 +29,10 @@ const CreateGradient = () => {
 		);
 
 		setShow(true);
+
+        setTimeout(()=>{
+            setShow(false)
+        },1200)
 	};
 
 	return (
@@ -36,13 +40,13 @@ const CreateGradient = () => {
 			<h1 className="pb-3">Create your own gradient</h1>
 			<div className="align-items-center align-content-between justify-content-center d-flex flex-wrap w-100 position-relative">
 				<div
-					className={styles.currentGradient}
+					className={`${styles.currentGradient} shadow-sm`}
 					style={{
 						background: `linear-gradient(${direction}, ${firstColor}, ${secondColor})`,
 					}}
 				></div>
-				<div className="d-flex flex-column w-50">
-					<Form>
+				<div className={`d-flex flex-column w-50 ${styles.inputsContainer}`}>
+					<Form className=" h-100 d-flex flex-column justify-content-evenly">
 						<Form.Group className="mb-3">
 							<div className="d-flex align-items-center">
 								<Form.Label htmlFor="directionSelect" className="me-3">
@@ -51,6 +55,7 @@ const CreateGradient = () => {
 								<Form.Select
 									id="directionSelect"
 									onChange={changeDirectionHandler}
+                                    className="shadow-sm"
 								>
 									<option value="to right">To right</option>
 									<option value="to bottom">To bottom</option>
@@ -59,7 +64,7 @@ const CreateGradient = () => {
 								</Form.Select>
 							</div>
 						</Form.Group>
-						<div className="d-flex align-items-center flex-wrap">
+						<div className="d-flex flex-wrap">
 							<Form.Label
 								htmlFor="directionSelect"
 								style={{ marginRight: "35px" }}
@@ -78,7 +83,7 @@ const CreateGradient = () => {
 											value={firstColor}
 											title="Choose first color"
 											onChange={changeFistColorHandler}
-											className={`w-100 ${styles.firstColorInput}`}
+											className={`w-100 shadow-sm ${styles.firstColorInput}`}
 										/>
 									</div>
 								</Form.Group>
@@ -89,7 +94,7 @@ const CreateGradient = () => {
 										value={secondColor}
 										title="Choose second color"
 										onChange={changeSecondColorHandler}
-										className={`w-100 ${styles.secondColorInput}`}
+										className={`w-100 shadow-sm ${styles.secondColorInput}`}
 									/>
 								</Form.Group>
 							</div>
@@ -105,11 +110,12 @@ const CreateGradient = () => {
 									rows={1}
 									value={`background: linear-gradient(${direction}, ${firstColor}, ${secondColor})`}
 									readOnly
+                                    className="shadow-sm"
 								/>
 							</div>
 						</Form.Group>
 						<div className="d-grid gap-2">
-							<Button variant="dark" size="lg" onClick={copyCssHandler}>
+							<Button variant="dark" size="lg" className='shadow' onClick={copyCssHandler}>
 								Copy CSS
 							</Button>
 						</div>

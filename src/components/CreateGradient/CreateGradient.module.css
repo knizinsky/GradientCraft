@@ -1,8 +1,8 @@
 .currentGradient {
 	width: 340px;
 	height: 280px;
-	border: 1px solid black;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .secondColorInput {
@@ -13,22 +13,28 @@
 	min-width: 40px;
 }
 
-.alert{
-    height: 55px;
-    min-width: 150px;
-    margin-top: 15px;
+.alert {
+	height: 57px;
+	min-width: 150px;
+	margin-top: 15px;
+}
+
+.inputsContainer{
+    display: flex;
+    justify-content: center;
+    height: 280px;
 }
 
 @media (min-width: 768px) {
 	.currentGradient {
 		margin-right: 35px;
-        margin-bottom: 0;
+		margin-bottom: 0;
 	}
 }
 
 @media (min-width: 992px) {
-    .alert{
-        margin-left: 190px;
-        margin-top: 0;
-    }
+	.alert {
+		margin-left: 190px;
+		margin-top: 0;
+	}
 }
