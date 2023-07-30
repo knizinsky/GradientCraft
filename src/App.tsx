@@ -1,9 +1,16 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
+
 function App() {
 	return (
 		<>
-			<div className="container">
+			<Navbar />
+			<Header />
+			<div className="container" style={{ height: "150vh" }}>
 				<h1>Hello world!</h1>
-				<button>Click me!</button>
+				<Button>Click me!</Button>
 			</div>
 		</>
 	);
