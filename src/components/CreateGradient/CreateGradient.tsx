@@ -6,7 +6,7 @@ import Alert from "react-bootstrap/Alert";
 import styles from "./CreateGradient.module.css";
 
 const CreateGradient = () => {
-	const [firstColor, setFirstColor] = useState("#dddddd");
+	const [firstColor, setFirstColor] = useState("#e01010");
 	const [secondColor, setSecondColor] = useState("#000000");
 	const [direction, setDirection] = useState("to right");
 	const [show, setShow] = useState(false);
@@ -36,8 +36,8 @@ const CreateGradient = () => {
 	};
 
 	return (
-		<div className="container d-flex flex-column align-items-center justify-content-center">
-			<h1 className="pb-3">Create your own gradient</h1>
+		<div className="container d-flex flex-column align-items-center justify-content-center mt-2">
+			<h1 className="pb-3 mt-4">Create your own gradient</h1>
 			<div className="align-items-center align-content-between justify-content-center d-flex flex-wrap w-100 position-relative">
 				<div
 					className={`${styles.currentGradient} shadow-sm`}
@@ -126,7 +126,7 @@ const CreateGradient = () => {
 					variant="success"
 					onClose={() => setShow(false)}
 					dismissible
-					className={`position-absolute top-100 w-25 start-50 text-center translate-middle-x ${styles.alert}`}
+					className={`position-absolute z top-100 w-25 start-50 text-center translate-middle-x ${styles.alert}`}
 				>
 					<p>Copied!</p>
 				</Alert>

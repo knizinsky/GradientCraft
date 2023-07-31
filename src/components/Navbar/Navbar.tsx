@@ -6,9 +6,9 @@ import logoIcon from '../../assets/img/icons/iconmonstr-paint-bucket-11.svg'
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark bg-dark fixed-top">
       <Container>
-        <Navbar.Brand href="#home"><img src={logoIcon} alt="Logo Crazy Gradients" /> <strong>Crazy Gradients</strong></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={logoIcon} alt="Logo Crazy Gradients" /> <strong>GradientCraft</strong></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

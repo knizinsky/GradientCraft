@@ -96,7 +96,7 @@ export const yellowGradients = [
             },
             {
                 id: 4.3,
-                gradient: 'linear-gradient(260deg, #ca023e, #ffda1f)'
+                gradient: 'linear-gradient(260deg, orange, #ffda1f)'
             },
             {
                 id: 4.4,

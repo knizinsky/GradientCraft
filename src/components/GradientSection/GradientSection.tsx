@@ -20,7 +20,7 @@ const GradientSection: React.FC<{
 	return (
 		<div className={`w-100 ${styles[`${props.mainColor}-block`]}`}>
 			<div className={`container text-center d-flex flex-column `}>
-			<p className="fs-2 my-4 mt-5 fw-medium text-uppercase">
+			<p className={`fs-2 my-4 mt-5 fw-medium text-uppercase ${styles.blockTitle}`}>
 				{capitalizeFirstLetter(props.mainColor)} gradients
 			</p>
 			<div className="d-flex w-100 justify-content-center flex-wrap">
@@ -28,7 +28,7 @@ const GradientSection: React.FC<{
 					return <GradientBlock key={gradient.id} gradientData={gradient.gradient}></GradientBlock>;
 				})}
 			</div>
-			<a href="#" className="fs-4 m-4 mb-5 text-light">See more {props.mainColor} gradients...</a>
+			<a href="#" className={`fs-4 m-4 mb-5 text-light ${styles.link}`}>See more {props.mainColor} gradients...</a>
 		</div>
 		</div>
 	);

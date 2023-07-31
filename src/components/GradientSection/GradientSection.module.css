@@ -1,41 +1,91 @@
-.red-block{
-    background-image: linear-gradient(
+.red-block {
+	background-image: linear-gradient(
 			to bottom,
-			rgba(7, 0, 0, 0.592),
-			rgba(0, 0, 0, 0.714)
+			rgba(7, 0, 0, 0.784),
+			rgba(0, 0, 0, 0.632)
 		),
 		url("../../assets/img/flower-g341f9ae70_1280.jpg");
-        background-size: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+	background-size: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom: 1px solid #00000075;
 }
 
 .green-block {
 	background-image: linear-gradient(
 			to bottom,
-            rgba(76, 101, 0, 0.592),
+			rgba(76, 101, 0, 0.592),
 			rgba(0, 0, 0, 0.714)
 		),
 		url("../../assets/img/fern-gc74407a4a_1280.jpg");
-        background-size: cover;
+	background-size: cover;
+	border-bottom: 1px solid #000000d2;
 }
 
-.yellow-block{
-    background-image: linear-gradient(
+.yellow-block {
+	background-image: linear-gradient(
 			to bottom,
 			rgba(7, 0, 0, 0.592),
 			rgba(0, 0, 0, 0.714)
 		),
 		url("../../assets/img/lily-gfdc902805_1280.jpg");
-        background-size: cover;
+	background-size: cover;
+	border-bottom: 1px solid #00000075;
 }
 
-.blue-block{
-    background-image: linear-gradient(
+.blue-block {
+	background-image: linear-gradient(
 			to bottom,
 			rgba(2, 0, 30, 0.744),
 			rgba(0, 0, 0, 0.714)
 		),
 		url("../../assets/img/snowflake-gea4f9732c_1280.jpg");
-        background-size: cover;
+	background-size: cover;
+	border-bottom: 1px solid #00000075;
+}
+
+.link {
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 0 10px black;
+}
+
+.blockTitle {
+	text-shadow: 0 0 4px black;
+}
+
+.link::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	bottom: -4px;
+	left: 50%;
+	transform: translate(-100%);
+	height: 2px;
+	background-color: #ffffff;
+	transition: 0.3s;
+	border-radius: 6px;
+}
+
+.link::before {
+	content: "";
+	position: absolute;
+	width: 0px;
+	bottom: -4px;
+	left: 50%;
+	transform: translate(-3%);
+	height: 2px;
+	background-color: #ffffff;
+	transition: width 0.3s;
+	border-radius: 6px;
+}
+
+.link:hover::after {
+	content: "";
+	width: 145px;
+}
+
+.link:hover::before {
+	content: "";
+	width: 145px;
 }
