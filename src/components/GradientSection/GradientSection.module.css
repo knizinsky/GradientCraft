@@ -1,8 +1,8 @@
 .red-block {
 	background-image: linear-gradient(
 			to bottom,
-			rgba(7, 0, 0, 0.784),
-			rgba(0, 0, 0, 0.632)
+			rgba(7, 0, 0, 0.823),
+			rgba(32, 0, 0, 0.633)
 		),
 		url("../../assets/img/flower-g341f9ae70_1280.jpg");
 	background-size: cover;
@@ -82,10 +82,10 @@
 
 .link:hover::after {
 	content: "";
-	width: 145px;
+	width: 155px;
 }
 
 .link:hover::before {
 	content: "";
-	width: 145px;
+	width: 155px;
 }

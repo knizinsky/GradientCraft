@@ -10,7 +10,7 @@ const Header = () => {
         <div className=" my-5 w-75 mx-auto">
           <hr />
         </div>
-				<h1 className="pb-2 mt-3">Browse 100 stunning gradients</h1>
+				<h2 className="pb-2 mt-3 fs-1">Browse 100 stunning gradients</h2>
 				<p className="fs-5">
 					Unlock the true potential of your projects with this captivating
 					collection of hundreds of stunning gradients.

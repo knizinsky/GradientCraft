@@ -13,10 +13,15 @@
 	min-width: 40px;
 }
 
+/* h1{
+	font-family: 'Nosifer', cursive;
+} */
+
 .alert {
 	height: 57px;
 	min-width: 150px;
 	margin-top: 15px;
+	z-index: 1000;
 }
 
 .inputsContainer{
