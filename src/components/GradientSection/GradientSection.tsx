@@ -1,6 +1,8 @@
 import React from "react";
 import GradientBlock from "../GradientBlock/GradientBlock";
 
+import styles from './GradientSection.module.css'
+
 const GradientSection: React.FC<{
 	mainColor: string;
 	gradientsData: {
@@ -16,8 +18,9 @@ const GradientSection: React.FC<{
 	};
 
 	return (
-		<div className="container text-center d-flex flex-column my-4">
-			<p className="fs-3 mb-3">
+		<div className={`w-100 ${styles[`${props.mainColor}-block`]}`}>
+			<div className={`container text-center d-flex flex-column `}>
+			<p className="fs-2 my-4 mt-5 fw-medium text-uppercase">
 				{capitalizeFirstLetter(props.mainColor)} gradients
 			</p>
 			<div className="d-flex w-100 justify-content-center flex-wrap">
@@ -25,8 +28,8 @@ const GradientSection: React.FC<{
 					return <GradientBlock key={gradient.id} gradientData={gradient.gradient}></GradientBlock>;
 				})}
 			</div>
-			<p className="fs-5">See more {props.mainColor} gradients...</p>
-			<hr />
+			<a href="#" className="fs-4 m-4 mb-5 text-light">See more {props.mainColor} gradients...</a>
+		</div>
 		</div>
 	);
 };

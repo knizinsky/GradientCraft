@@ -1,0 +1,41 @@
+.red-block{
+    background-image: linear-gradient(
+			to bottom,
+			rgba(7, 0, 0, 0.592),
+			rgba(0, 0, 0, 0.714)
+		),
+		url("../../assets/img/flower-g341f9ae70_1280.jpg");
+        background-size: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+}
+
+.green-block {
+	background-image: linear-gradient(
+			to bottom,
+            rgba(76, 101, 0, 0.592),
+			rgba(0, 0, 0, 0.714)
+		),
+		url("../../assets/img/fern-gc74407a4a_1280.jpg");
+        background-size: cover;
+}
+
+.yellow-block{
+    background-image: linear-gradient(
+			to bottom,
+			rgba(7, 0, 0, 0.592),
+			rgba(0, 0, 0, 0.714)
+		),
+		url("../../assets/img/lily-gfdc902805_1280.jpg");
+        background-size: cover;
+}
+
+.blue-block{
+    background-image: linear-gradient(
+			to bottom,
+			rgba(2, 0, 30, 0.744),
+			rgba(0, 0, 0, 0.714)
+		),
+		url("../../assets/img/snowflake-gea4f9732c_1280.jpg");
+        background-size: cover;
+}

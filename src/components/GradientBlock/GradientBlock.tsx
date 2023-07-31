@@ -21,7 +21,7 @@ const GradientBlock: React.FC<{
 
 	return (
 		<div
-			className={`${styles.gradientBlock} shadow`}
+			className={`${styles.gradientBlock} shadow-lg`}
 			style={{
 				background: `${props.gradientData}`,
 			}}
