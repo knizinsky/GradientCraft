@@ -42,6 +42,30 @@
 		url("../../assets/img/snowflake-gea4f9732c_1280.jpg");
 	background-size: cover;
 	border-bottom: 1px solid #00000075;
+	background-position: center;
+}
+
+.purple-block {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(2, 0, 30, 0.855),
+			rgba(43, 0, 66, 0.648)
+		),
+		url("../../assets/img/purple-ged1619f34_1280.jpg");
+	background-size: cover;
+	border-bottom: 1px solid #00000075;
+}
+
+.dark-block {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(2, 0, 30, 0.162),
+			rgba(0, 0, 0, 0.278)
+		),
+		url("../../assets/img/dark-g196ff051d_1280.jpg");
+	background-size: cover;
+	background-position: center;
+	border-bottom: 1px solid #00000075;
 }
 
 .link {

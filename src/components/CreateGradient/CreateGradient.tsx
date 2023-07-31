@@ -30,9 +30,9 @@ const CreateGradient = () => {
 
 		setShow(true);
 
-        setTimeout(()=>{
-            setShow(false)
-        },1200)
+		setTimeout(() => {
+			setShow(false);
+		}, 1200);
 	};
 
 	return (
@@ -55,7 +55,7 @@ const CreateGradient = () => {
 								<Form.Select
 									id="directionSelect"
 									onChange={changeDirectionHandler}
-                                    className="shadow-sm"
+									className="shadow-sm"
 								>
 									<option value="to right">To right</option>
 									<option value="to bottom">To bottom</option>
@@ -110,12 +110,17 @@ const CreateGradient = () => {
 									rows={1}
 									value={`background: linear-gradient(${direction}, ${firstColor}, ${secondColor})`}
 									readOnly
-                                    className="shadow-sm"
+									className="shadow-sm"
 								/>
 							</div>
 						</Form.Group>
 						<div className="d-grid gap-2">
-							<Button variant="dark" size="lg" className={`shadow ${styles.copyBtn}`} onClick={copyCssHandler}>
+							<Button
+								variant="dark"
+								size="lg"
+								className={`shadow ${styles.copyBtn}`}
+								onClick={copyCssHandler}
+							>
 								Copy CSS
 							</Button>
 						</div>

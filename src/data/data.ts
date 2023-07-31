@@ -29,11 +29,52 @@ export const redGradients = [
             },
             {
                 id: 1.7,
-                gradient: 'linear-gradient(to left, #833ab4, #ff3333,#fcb045)'
+                gradient: 'linear-gradient(to bottom, #8f1414, #fb2323)'
             },
             {
                 id: 1.8,
-                gradient: 'linear-gradient(to bottom, #ff3333 20%, #246dff)'
+                gradient: 'linear-gradient(to left, #f98639, #fb232e)'
+            },
+        ]
+    }
+]
+
+export const yellowGradients = [
+    {
+        id: 4,
+        mainColor: "yellow",
+        gradientsData: [
+            {
+                id: 4.1,
+                gradient: 'linear-gradient(150deg, orange 20%, #e3e900)'
+            },
+            {
+                id: 4.2,
+                gradient: 'linear-gradient(to right, #ffa200, #805300)'
+            },
+            {
+                id: 4.3,
+                gradient: 'linear-gradient(260deg, orange, #ffda1f)'
+            },
+            {
+                id: 4.4,
+                gradient: 'linear-gradient(to left, #ff5286, #ffda1f)'
+            },
+            {
+                id: 4.5,
+                gradient: 'linear-gradient(to top, #ca8102, #ffd500)'
+            },
+            {
+                id: 4.6,
+                gradient: 'linear-gradient(to top, #91922a, #ffe561)'
+            },
+            {
+                id: 4.7,
+                gradient: 'linear-gradient(to left, #9effa5, #f4cb34 60%)'
+            },
+            {
+                id: 4.8,
+                gradient: 'linear-gradient(to top, #b5f231, #ffc31f)'
             },
         ]
     }
@@ -80,49 +121,6 @@ export const greenGradients = [
     }
 ]
 
-
-export const yellowGradients = [
-    {
-        id: 4,
-        mainColor: "yellow",
-        gradientsData: [
-            {
-                id: 4.1,
-                gradient: 'linear-gradient(150deg, orange 20%, #e3e900)'
-            },
-            {
-                id: 4.2,
-                gradient: 'linear-gradient(to right, #ffa200, #805300)'
-            },
-            {
-                id: 4.3,
-                gradient: 'linear-gradient(260deg, orange, #ffda1f)'
-            },
-            {
-                id: 4.4,
-                gradient: 'linear-gradient(to left, #ff5286, #ffda1f)'
-            },
-            {
-                id: 4.5,
-                gradient: 'linear-gradient(to top, #ca8102, #ffd500)'
-            },
-            {
-                id: 4.6,
-                gradient: 'linear-gradient(to top, #91922a, #ffe561)'
-            },
-            {
-                id: 4.7,
-                gradient: 'linear-gradient(to left, #9effa5, #f4cb34 60%)'
-            },
-            {
-                id: 4.8,
-                gradient: 'linear-gradient(to top, #b5f231, #ffc31f)'
-            },
-        ]
-    }
-]
-
-
 export const blueGradients = [
     {
         id: 3,
@@ -159,6 +157,88 @@ export const blueGradients = [
             {
                 id: 3.8,
                 gradient: 'linear-gradient(to left, #000d42, #67f6f9)'
+            },
+        ]
+    }
+]
+
+export const purpleGradients = [
+    {
+        id: 5,
+        mainColor: "purple",
+        gradientsData: [
+            {
+                id: 5.1,
+                gradient: 'linear-gradient(to bottom, #af00ff, #4b0c4b)'
+            },
+            {
+                id: 5.2,
+                gradient: 'linear-gradient(to right, #b100ff, #800080)'
+            },
+            {
+                id: 5.3,
+                gradient: 'linear-gradient(150deg, purple 20%, #e3e900)'
+            },
+            {
+                id: 5.4,
+                gradient: 'linear-gradient(to right, #d14dff 20%, #ffe4ff)'
+            },
+            {
+                id: 5.5,
+                gradient: 'linear-gradient(to bottom, #b200ff, #f8a5f8)'
+            },
+            {
+                id: 5.6,
+                gradient: 'linear-gradient(145deg, #ff42ff, #9a329a)'
+            },
+            {
+                id: 5.7,
+                gradient: 'linear-gradient(to left, #833ab4, #ff33ff, #fcb045)'
+            },
+            {
+                id: 5.8,
+                gradient: 'linear-gradient(to bottom, #ff33ff 20%, #246dff)'
+            },
+        ]
+    }
+]
+
+export const darkGradients = [
+    {
+        id: 6,
+        mainColor: "dark",
+        gradientsData: [
+            {
+                id: 6.1,
+                gradient: 'linear-gradient(to bottom, #333333, #1a1a1a)'
+            },
+            {
+                id: 6.2,
+                gradient: 'linear-gradient(to right, #444444, #222222)'
+            },
+            {
+                id: 6.3,
+                gradient: 'linear-gradient(to bottom, #575757, #000a0a)'
+            },
+            {
+                id: 6.4,
+                gradient: 'linear-gradient(to right, #444444 20%, #e4e4e4)'
+            },
+            {
+                id: 6.5,
+                gradient: 'linear-gradient(to bottom, #333333, #999999)'
+            },
+            {
+                id: 6.6,
+                gradient: 'linear-gradient(145deg, #666666, #333333)'
+            },
+            {
+                id: 6.7,
+                gradient: 'linear-gradient(to bottom, #232526, #03081c)'
+            },
+            {
+                id: 6.8,
+                gradient: 'linear-gradient(to left, #244743, #000000)'
             },
         ]
     }

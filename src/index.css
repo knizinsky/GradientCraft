@@ -10,3 +10,7 @@ body{
 main{
     color: white;
 }
+
+h1, h2{
+    text-shadow: 0 0 3px rgb(187, 187, 187);
+}
