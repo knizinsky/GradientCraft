@@ -3,7 +3,15 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import GradientSection from "./components/GradientSection/GradientSection";
 
-import { redGradients, yellowGradients, greenGradients, blueGradients, purpleGradients, darkGradients } from "./data/data";
+import {
+	redGradients,
+	yellowGradients,
+	greenGradients,
+	blueGradients,
+	purpleGradients,
+	darkGradients,
+} from "./data/data";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -66,6 +74,7 @@ function App() {
 					);
 				})}
 			</main>
+			<Footer></Footer>
 		</>
 	);
 }

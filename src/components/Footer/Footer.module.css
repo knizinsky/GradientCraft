@@ -1,0 +1,26 @@
+.footer {
+	background: linear-gradient(to bottom, #252525, #0f0f0f);
+	color: #d6d6d6;
+	text-align: center;
+}
+
+svg {
+	margin: 0 auto;
+}
+
+svg:hover{
+    color: #797979;
+}
+
+p {
+	margin-bottom: 3px;
+}
+
+a {
+	color: #d6d6d6;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #989898;
+}
