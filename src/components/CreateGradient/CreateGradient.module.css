@@ -13,9 +13,13 @@
 	min-width: 40px;
 }
 
-/* h1{
-	font-family: 'Nosifer', cursive;
-} */
+.copyBtn{
+	background: linear-gradient(to bottom, #2f2f2f, #0f0f0f);
+}
+
+.copyBtn:hover{
+	background: linear-gradient(to bottom, #4a4a4a, #272727);
+}
 
 .alert {
 	height: 57px;

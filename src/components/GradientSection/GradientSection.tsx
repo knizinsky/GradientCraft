@@ -18,7 +18,7 @@ const GradientSection: React.FC<{
 	};
 
 	return (
-		<div className={`w-100 ${styles[`${props.mainColor}-block`]}`}>
+		<div className={`w-100 ${styles[`${props.mainColor}-block`]}`} id={`${props.mainColor}`}>
 			<div className={`container text-center d-flex flex-column `}>
 			<p className={`fs-2 my-4 mt-5 fw-medium text-uppercase ${styles.blockTitle}`}>
 				{capitalizeFirstLetter(props.mainColor)} gradients

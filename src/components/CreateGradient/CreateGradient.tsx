@@ -115,7 +115,7 @@ const CreateGradient = () => {
 							</div>
 						</Form.Group>
 						<div className="d-grid gap-2">
-							<Button variant="dark" size="lg" className='shadow' onClick={copyCssHandler}>
+							<Button variant="dark" size="lg" className={`shadow ${styles.copyBtn}`} onClick={copyCssHandler}>
 								Copy CSS
 							</Button>
 						</div>
