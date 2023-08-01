@@ -5,8 +5,14 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import favicon from "../../assets/img/icons/favicon.svg";
 
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
+import { NavbarBrand } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function CollapsibleExample() {
+    const currentPath = window.location.pathname;
+
+
 	return (
 		<Navbar
 			collapseOnSelect
@@ -15,7 +21,7 @@ function CollapsibleExample() {
 			className={`navbar navbar-dark bg-dark fixed-top scrollspy-example ${styles.navbar}`}
 		>
 			<Container>
-				<Navbar.Brand href="#home" className=" d-flex align-items-center">
+			<Navbar.Brand as={currentPath == '/' ? NavLink : NavLink} to="/" href="#" className=" d-flex align-items-center">
 					<img src={favicon} alt="Logo Crazy Gradients" />{" "}
 					<strong className="ms-2">GradientCraft</strong>
 				</Navbar.Brand>

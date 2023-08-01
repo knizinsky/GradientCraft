@@ -2,6 +2,7 @@ import React from "react";
 import GradientBlock from "../GradientBlock/GradientBlock";
 
 import styles from './GradientSection.module.css'
+import { Link } from "react-router-dom";
 
 const GradientSection: React.FC<{
 	mainColor: string;
@@ -28,7 +29,7 @@ const GradientSection: React.FC<{
 					return <GradientBlock key={gradient.id} gradientData={gradient.gradient}></GradientBlock>;
 				})}
 			</div>
-			<a href="#" className={`fs-4 m-4 mb-5 text-light ${styles.link}`}>See more {props.mainColor} gradients...</a>
+			<Link to={`/${props.mainColor}`} className={`fs-4 m-4 mb-5 text-light ${styles.link}`}>See more {props.mainColor} gradients...</Link>
 		</div>
 		</div>
 	);

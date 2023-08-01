@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.466),
+        rgba(245, 245, 245, 0.593)
+    ),
+    url("../../assets/img/texture-g4383dc3e1_1280.jpg");
+    background-size: cover;
+}
