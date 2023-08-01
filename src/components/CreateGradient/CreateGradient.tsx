@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
@@ -10,6 +10,9 @@ const CreateGradient = () => {
 	const [secondColor, setSecondColor] = useState("#000000");
 	const [direction, setDirection] = useState("to right");
 	const [show, setShow] = useState(false);
+
+	useEffect(() => {
+	}, [firstColor]);
 
 	const changeFistColorHandler = (event: any) => {
 		setFirstColor(event.target.value);
@@ -35,12 +38,58 @@ const CreateGradient = () => {
 		}, 1200);
 	};
 
+	const getNextColor = (character: string): string => {
+		if (/^[0-8]$/.test(character)) {
+		  const rnd = Math.floor(Math.random() * 10);
+		  return rnd % 2 === 0 ? (parseInt(character) + 1).toString() : rnd.toString();
+		} else {
+		  switch (character) {
+			case "9":
+			  return "a";
+			case "a":
+			  return "b";
+			case "b":
+			  return "c";
+			case "c":
+			  return "d";
+			case "d":
+			  return "e";
+			case "e":
+			  return "f";
+			case "f":
+			  return "0";
+			default:
+			  return character;
+		  }
+		}
+	  };
+	  
+	  const animateColors = () => {
+		const color1 = firstColor.slice(1).split("").map(getNextColor);
+		const color2 = secondColor.slice(1).split("").map(getNextColor);
+	  
+		setFirstColor("#" + color1.join(""));
+		setSecondColor("#" + color2.join(""));
+	  };
+	  
+
+	const spinHandler = () => {
+		const interval = setInterval(()=>{
+			animateColors();
+		},69)
+
+		setTimeout(()=>{
+			clearInterval(interval);
+		},300)
+	}
+
 	return (
 		<div className="container d-flex flex-column align-items-center justify-content-center mt-2">
 			<h1 className="pb-3 mt-4">Create your own gradient</h1>
 			<div className="align-items-center align-content-between justify-content-center d-flex flex-wrap w-100 position-relative">
 				<div
 					className={`${styles.currentGradient} shadow-sm`}
+					onClick={spinHandler}
 					style={{
 						background: `linear-gradient(${direction}, ${firstColor}, ${secondColor})`,
 					}}

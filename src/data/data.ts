@@ -246,7 +246,7 @@ export const darkGradients = [
 
 // RED
 
-export const lightRedGradients = [
+const lightRedGradients = [
     {
         id: 7,
         mainColor: "light red",
@@ -287,7 +287,7 @@ export const lightRedGradients = [
     }
 ]
 
-export const darkRedGradients = [
+const darkRedGradients = [
     {
         id: 8,
         mainColor: "dark red",
@@ -328,7 +328,7 @@ export const darkRedGradients = [
     }
 ]
 
-export const classicRedGradients = [
+const classicRedGradients = [
     {
         id: 9,
         mainColor: "classic red",
@@ -371,7 +371,7 @@ export const classicRedGradients = [
 
 // YELLOW
 
-export const lightYellowGradients = [
+const lightYellowGradients = [
     {
         id: 10,
         mainColor: "light yellow",
@@ -412,7 +412,7 @@ export const lightYellowGradients = [
     }
 ];
 
-export const darkYellowGradients = [
+const darkYellowGradients = [
     {
         id: 11,
         mainColor: "dark yellow",
@@ -453,7 +453,7 @@ export const darkYellowGradients = [
     }
 ];
 
-export const classicYellowGradients = [
+const classicYellowGradients = [
     {
         id: 12,
         mainColor: "classic yellow",
@@ -497,7 +497,7 @@ export const classicYellowGradients = [
 
 // GREEN
 
-export const lightGreenGradients = [
+const lightGreenGradients = [
     {
         id: 13,
         mainColor: "light green",
@@ -538,7 +538,7 @@ export const lightGreenGradients = [
     }
 ];
 
-export const darkGreenGradients = [
+const darkGreenGradients = [
     {
         id: 14,
         mainColor: "dark green",
@@ -579,7 +579,7 @@ export const darkGreenGradients = [
     }
 ];
 
-export const classicGreenGradients = [
+const classicGreenGradients = [
     {
         id: 15,
         mainColor: "classic green",
@@ -622,7 +622,7 @@ export const classicGreenGradients = [
 
 // BLUE
 
-export const lightBlueGradients = [
+const lightBlueGradients = [
     {
         id: 16,
         mainColor: "light blue",
@@ -663,7 +663,7 @@ export const lightBlueGradients = [
     }
 ];
 
-export const darkBlueGradients = [
+const darkBlueGradients = [
     {
         id: 17,
         mainColor: "dark blue",
@@ -704,7 +704,7 @@ export const darkBlueGradients = [
     }
 ];
 
-export const classicBlueGradients = [
+const classicBlueGradients = [
     {
         id: 18,
         mainColor: "classic blue",
@@ -747,7 +747,7 @@ export const classicBlueGradients = [
 
 // PURPLE
 
-export const lightPurpleGradients = [
+const lightPurpleGradients = [
     {
         id: 19,
         mainColor: "light purple",
@@ -788,7 +788,7 @@ export const lightPurpleGradients = [
     }
 ];
 
-export const darkPurpleGradients = [
+const darkPurpleGradients = [
     {
         id: 20,
         mainColor: "dark purple",
@@ -829,7 +829,7 @@ export const darkPurpleGradients = [
     }
 ];
 
-export const classicPurpleGradients = [
+const classicPurpleGradients = [
     {
         id: 21,
         mainColor: "classic purple",
@@ -872,7 +872,7 @@ export const classicPurpleGradients = [
 
 // DARK
 
-export const lightDarkGradients = [
+const lightDarkGradients = [
     {
         id: 22,
         mainColor: "light dark",
@@ -913,7 +913,7 @@ export const lightDarkGradients = [
     }
 ];
 
-export const darkDarkGradients = [
+const darkDarkGradients = [
     {
         id: 23,
         mainColor: "very dark",
@@ -955,7 +955,7 @@ export const darkDarkGradients = [
 ];
 
 
-export const classicDarkGradients = [
+const classicDarkGradients = [
     {
         id: 24,
         mainColor: "normal dark",
@@ -995,3 +995,30 @@ export const classicDarkGradients = [
         ]
     }
 ];
+
+export const gradientData = [
+    {
+    path: "/red",
+    gradients: [lightRedGradients, classicRedGradients, darkRedGradients],
+  },
+  {
+    path: "/yellow",
+    gradients: [lightYellowGradients, classicYellowGradients, darkYellowGradients],
+  },
+    {
+    path: "/green",
+    gradients: [lightGreenGradients, classicGreenGradients, darkGreenGradients],
+  },
+  {
+    path: "/blue",
+    gradients: [lightBlueGradients, classicBlueGradients, darkBlueGradients],
+  },
+    {
+    path: "/purple",
+    gradients: [lightPurpleGradients, classicPurpleGradients, darkPurpleGradients],
+  },
+  {
+    path: "/dark",
+    gradients: [lightDarkGradients, classicDarkGradients, darkDarkGradients],
+  },
+]

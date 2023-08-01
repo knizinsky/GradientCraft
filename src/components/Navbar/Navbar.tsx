@@ -5,13 +5,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import favicon from "../../assets/img/icons/favicon.svg";
 
 import styles from "./Navbar.module.css";
-import { Link } from "react-router-dom";
-import { NavbarBrand } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 function CollapsibleExample() {
     const currentPath = window.location.pathname;
-
 
 	return (
 		<Navbar
@@ -23,7 +20,7 @@ function CollapsibleExample() {
 			<Container>
 			<Navbar.Brand as={currentPath == '/' ? NavLink : NavLink} to="/" href="#" className=" d-flex align-items-center">
 					<img src={favicon} alt="Logo Crazy Gradients" />{" "}
-					<strong className="ms-2">GradientCraft</strong>
+					<p className="ms-2">GradientCraft</p>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
