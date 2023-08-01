@@ -181,7 +181,7 @@ export const purpleGradients = [
             },
             {
                 id: 5.4,
-                gradient: 'linear-gradient(to right, #d14dff 20%, #ffe4ff)'
+                gradient: 'linear-gradient(to right, #802aea, #4a0250)'
             },
             {
                 id: 5.5,
@@ -197,7 +197,7 @@ export const purpleGradients = [
             },
             {
                 id: 5.8,
-                gradient: 'linear-gradient(to bottom, #ff33ff 20%, #246dff)'
+                gradient: 'linear-gradient(to right, #8e2de2, #4a00e0)'
             },
         ]
     }
@@ -234,11 +234,11 @@ export const darkGradients = [
             },
             {
                 id: 6.7,
-                gradient: 'linear-gradient(to bottom, #232526, #03081c)'
+                gradient: 'linear-gradient(to bottom, #5c5c5c, #000000)'
             },
             {
                 id: 6.8,
-                gradient: 'linear-gradient(to left, #244743, #000000)'
+                gradient: 'linear-gradient(to right, #4f4f4f, #212121)'
             },
         ]
     }
