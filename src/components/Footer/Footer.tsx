@@ -22,6 +22,7 @@ const Footer = () => {
 					href="https://github.com/knizinsky/Crazy-Gradients"
 					target="blank"
 					rel="noreferrer"
+					aria-label="Link to author's github"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

@@ -879,35 +879,35 @@ export const lightDarkGradients = [
         gradientsData: [
             {
                 id: 22.1,
-                gradient: 'linear-gradient(to bottom, #000000, #1a1a1a)'
+                gradient: 'linear-gradient(to bottom, #0a0a0a, #757575)'
             },
             {
                 id: 22.2,
-                gradient: 'linear-gradient(to right, #000000, #333333)'
+                gradient: 'linear-gradient(to bottom, #0e0e0e, #808080)'
             },
             {
                 id: 22.3,
-                gradient: 'linear-gradient(150deg, #000000 20%, #e3e900a3)'
+                gradient: 'linear-gradient(150deg,#121212, #8a8a8a)'
             },
             {
                 id: 22.4,
-                gradient: 'linear-gradient(to right, #000000 20%, #e4e4e4)'
+                gradient: 'linear-gradient(to right,#141414, #909090)'
             },
             {
                 id: 22.5,
-                gradient: 'linear-gradient(to bottom, #000000, #999999)'
+                gradient: 'linear-gradient(to bottom, #181818, #959595)'
             },
             {
                 id: 22.6,
-                gradient: 'linear-gradient(145deg, #000000, #000000)'
+                gradient: 'linear-gradient(145deg, #1c1c1c, #9a9a9a)'
             },
             {
                 id: 22.7,
-                gradient: 'linear-gradient(to left, #000000, #000000, #fcb045)'
+                gradient: 'linear-gradient(to left,#202020, #9f9f9f)'
             },
             {
                 id: 22.8,
-                gradient: 'linear-gradient(to bottom, #000000 20%, #246dff)'
+                gradient: 'linear-gradient(to bottom,#242424, #a4a4a4)'
             },
         ]
     }
@@ -924,15 +924,15 @@ export const darkDarkGradients = [
             },
             {
                 id: 23.2,
-                gradient: 'linear-gradient(to right, #191919, #333333)'
+                gradient: 'linear-gradient(to right, #101010, #222222)'
             },
             {
                 id: 23.3,
-                gradient: 'linear-gradient(150deg, #191919 20%, #e3e900a3)'
+                gradient: 'linear-gradient(150deg, #191919, #191919)'
             },
             {
                 id: 23.4,
-                gradient: 'linear-gradient(to right, #191919 20%, #e4e4e4)'
+                gradient: 'linear-gradient(to right, #191919, #191919)'
             },
             {
                 id: 23.5,
@@ -944,15 +944,16 @@ export const darkDarkGradients = [
             },
             {
                 id: 23.7,
-                gradient: 'linear-gradient(to left, #000000, #191919, #fcb045)'
+                gradient: 'linear-gradient(to left, #191919, #010101)'
             },
             {
                 id: 23.8,
-                gradient: 'linear-gradient(to bottom, #000000 20%, #246dff)'
+                gradient: 'linear-gradient(to right, #191919, #000000)'
             },
         ]
     }
 ];
+
 
 export const classicDarkGradients = [
     {
@@ -961,15 +962,15 @@ export const classicDarkGradients = [
         gradientsData: [
             {
                 id: 24.1,
-                gradient: 'linear-gradient(to bottom, #000000, #0d0d0d)'
+                gradient: 'linear-gradient(to left, #494949, #191919)'
             },
             {
                 id: 24.2,
-                gradient: 'linear-gradient(to right, #000000, #262626)'
+                gradient: 'linear-gradient(to right, #030303, #262626)'
             },
             {
                 id: 24.3,
-                gradient: 'linear-gradient(150deg, #000000 20%, #e3e900a3)'
+                gradient: 'linear-gradient(to right, #191919, #191919)'
             },
             {
                 id: 24.4,
@@ -981,15 +982,15 @@ export const classicDarkGradients = [
             },
             {
                 id: 24.6,
-                gradient: 'linear-gradient(145deg, #000000, #0d0d0d)'
+                gradient: 'linear-gradient(to bottom, #494949, #191919)'
             },
             {
                 id: 24.7,
-                gradient: 'linear-gradient(to left, #000000, #0d0d0d, #fcb045)'
+                gradient: 'linear-gradient(to top, #111111, #333333)'
             },
             {
                 id: 24.8,
-                gradient: 'linear-gradient(to bottom, #000000 20%, #246dff)'
+                gradient: 'linear-gradient(to left, #111111, #333333)'
             },
         ]
     }
