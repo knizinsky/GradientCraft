@@ -24,6 +24,8 @@ const GradientBlock: React.FC<{
 			className={`${styles.gradientBlock} shadow-lg`}
 			style={{
 				background: `${props.gradientData}`,
+				opacity: '0',
+				transition: '.35s'
 			}}
             onClick={copyHandler}
 		>

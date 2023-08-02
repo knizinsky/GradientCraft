@@ -36,8 +36,6 @@ function CollapsibleExample() {
 							<NavDropdown.Item href="#blue">Blue</NavDropdown.Item>
 							<NavDropdown.Item href="#purple">Purple</NavDropdown.Item>
 							<NavDropdown.Item href="#dark">Dark</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">Other</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 				</Navbar.Collapse>
