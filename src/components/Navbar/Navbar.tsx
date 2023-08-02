@@ -19,7 +19,7 @@ function CollapsibleExample() {
 		>
 			<Container>
 			<Navbar.Brand as={currentPath == '/' ? NavLink : NavLink} to="/" href="#" className=" d-flex align-items-center">
-					<img src={favicon} alt="Logo GradientCraft" className=" mb-2" />
+					<img src={favicon} alt="Logo GradientCraft" className="mb-2" height="24" width="24" />
 					<p className="ms-2">GradientCraft</p>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
