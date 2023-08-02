@@ -1,9 +1,246 @@
-.header{
-    background-image: linear-gradient(
-			to bottom,
-			rgba(255, 255, 255, 0.466),
-			rgba(245, 245, 245, 0.593)
-		),
-		url("../../assets/img/texture-g4383dc3e1_1280.jpg");
-        background-size: cover;
+.header {
+	/* background-image: 
+		url("../../assets/img/Untitled.jpg");
+        background-size: cover; */
+	background-color: black;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.createGradientSection {
+	z-index: 1000;
+}
+
+.bluredBlock1 {
+	width: 450px;
+	height: 520px;
+	position: absolute;
+	transform: rotate(-30deg);
+	background: radial-gradient(closest-side, #ff7b003e 2%, #00000000);
+	animation: rotate1 70s forwards infinite;
+	z-index: -1;
+}
+
+.bluredBlock2 {
+	width: 700px;
+	height: 400px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	background: radial-gradient(closest-side, #ff00005b 2%, #00000000);
+	animation: rotate2 45s infinite forwards;
+	z-index: -1;
+}
+
+.bluredBlock3 {
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	bottom: 50%;
+	left: 80%;
+	background: radial-gradient(closest-side, #c258075b 2%, #00000000);
+	animation: rotate3 60s infinite forwards;
+	z-index: -1;
+}
+
+.bluredBlock4 {
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	bottom: -30%;
+	left: 10%;
+	background: radial-gradient(closest-side, #c24f075b 2%, #00000000);
+	animation: rotate4 50s infinite forwards;
+	z-index: -1;
+}
+
+.bluredBlock5 {
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	bottom: 20%;
+	left: -30%;
+	background: radial-gradient(closest-side, #c207075b 2%, #00000000);
+	animation: rotate5 60s forwards infinite;
+	z-index: -1;
+}
+
+.bluredBlock6 {
+	width: 600px;
+	height: 450px;
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	background: radial-gradient(closest-side, #9f04044d 2%, #00000000);
+	animation: rotate6 60s infinite forwards;
+	z-index: -1;
+}
+
+.bluredBlock7 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	background: radial-gradient(closest-side, #f2070725 2%, #00000000);
+	animation: rotate7 60s infinite forwards;
+	z-index: -1;
+}
+
+@keyframes rotate1 {
+	0% {
+		transform: rotate(-20deg);
+		left: -30%;
+		top: -30%;
+	}
+
+	30% {
+	}
+
+	to {
+		transform: rotate(-360deg);
+		top: 30%;
+		left: 100%;
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		left: 140%;
+		background: transparent;
+	}
+
+	51% {
+		left: -30%;
+	}
+
+	56% {
+		left: -30%;
+		background: radial-gradient(closest-side, #ff00005b 2%, #00000000);
+	}
+
+	100% {
+		transform: rotate(360deg);
+		left: 50%;
+	}
+}
+
+@keyframes rotate3 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	40% {
+		left: 120%;
+		background: transparent;
+	}
+
+	43% {
+		left: -30%;
+	}
+
+	48% {
+		left: -20%;
+		background: radial-gradient(closest-side, #c207075b 2%, #00000000);
+	}
+
+	100% {
+		transform: rotate(360deg);
+		left: 80%;
+	}
+}
+
+@keyframes rotate4 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	79% {
+		left: 190%;
+	}
+
+	80% {
+		left: 150%;
+		background: transparent;
+	}
+
+	81% {
+		left: -30%;
+	}
+
+	85% {
+		left: -20%;
+		background: radial-gradient(closest-side, #c207075b 2%, #00000000);
+	}
+
+	100% {
+		transform: rotate(360deg);
+		left: 10%;
+	}
+}
+
+@keyframes rotate5 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+		left: 130%;
+	}
+}
+
+@keyframes rotate6 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	90% {
+		left: 190%;
+		background: transparent;
+	}
+
+	91%{
+		left: -30%;
+	}
+
+	91% {
+		left: -20%;
+		background: radial-gradient(closest-side, #8f00054d 2%, #00000000);
+	}
+
+	100% {
+		transform: rotate(360deg);
+		left: 0%;
+	}
+}
+
+@keyframes rotate7 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	85% {
+		left: 190%;
+		background: transparent;
+	}
+
+	86% {
+		left: -30%;
+	}
+
+	93% {
+		left: 0%;
+		background: radial-gradient(closest-side, #85002e5b 2%, #00000000);
+	}
+
+	100% {
+		transform: rotate(360deg);
+		left: 30%;
+	}
 }

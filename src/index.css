@@ -12,5 +12,5 @@ main{
 }
 
 h1, h2{
-    text-shadow: 0 0 3px rgb(187, 187, 187);
+    /* text-shadow: 0 0 3px rgb(131, 131, 131); */
 }

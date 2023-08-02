@@ -4,8 +4,8 @@ import styles from "./Header.module.css";
 
 const Header = () => {
 	return (
-		<header className={` w-100 ${styles.header}`} id="gradient-creator">
-			<div className={`container text-center py-5  `}>
+		<header className={`text-white w-100 ${styles.header}`} id="gradient-creator">
+			<div className={`container text-center py-5  ${styles.createGradientSection}`}>
 				<CreateGradient />
 				<div className=" my-5 w-75 mx-auto">
 					<hr />
@@ -16,6 +16,13 @@ const Header = () => {
 					collection of hundreds of stunning gradients.
 				</p>
 			</div>
+			<div className={styles.bluredBlock1}></div>
+			<div className={styles.bluredBlock2}></div>
+			<div className={styles.bluredBlock3}></div>
+			<div className={styles.bluredBlock4}></div>
+			<div className={styles.bluredBlock5}></div>
+			<div className={styles.bluredBlock6}></div>
+			<div className={styles.bluredBlock7}></div>
 		</header>
 	);
 };

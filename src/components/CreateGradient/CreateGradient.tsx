@@ -7,12 +7,11 @@ import styles from "./CreateGradient.module.css";
 
 const CreateGradient = () => {
 	const [firstColor, setFirstColor] = useState("#e01010");
-	const [secondColor, setSecondColor] = useState("#000000");
+	const [secondColor, setSecondColor] = useState("#c2930f");
 	const [direction, setDirection] = useState("to right");
 	const [show, setShow] = useState(false);
 
-	useEffect(() => {
-	}, [firstColor]);
+	useEffect(() => {}, [firstColor]);
 
 	const changeFistColorHandler = (event: any) => {
 		setFirstColor(event.target.value);
@@ -40,48 +39,49 @@ const CreateGradient = () => {
 
 	const getNextColor = (character: string): string => {
 		if (/^[0-8]$/.test(character)) {
-		  const rnd = Math.floor(Math.random() * 10);
-		  return rnd % 2 === 0 ? (parseInt(character) + 1).toString() : rnd.toString();
+			const rnd = Math.floor(Math.random() * 10);
+			return rnd % 2 === 0
+				? (parseInt(character) + 1).toString()
+				: rnd.toString();
 		} else {
-		  switch (character) {
-			case "9":
-			  return "a";
-			case "a":
-			  return "b";
-			case "b":
-			  return "c";
-			case "c":
-			  return "d";
-			case "d":
-			  return "e";
-			case "e":
-			  return "f";
-			case "f":
-			  return "0";
-			default:
-			  return character;
-		  }
+			switch (character) {
+				case "9":
+					return "a";
+				case "a":
+					return "b";
+				case "b":
+					return "c";
+				case "c":
+					return "d";
+				case "d":
+					return "e";
+				case "e":
+					return "f";
+				case "f":
+					return "0";
+				default:
+					return character;
+			}
 		}
-	  };
-	  
-	  const animateColors = () => {
+	};
+
+	const animateColors = () => {
 		const color1 = firstColor.slice(1).split("").map(getNextColor);
 		const color2 = secondColor.slice(1).split("").map(getNextColor);
-	  
+
 		setFirstColor("#" + color1.join(""));
 		setSecondColor("#" + color2.join(""));
-	  };
-	  
+	};
 
 	const spinHandler = () => {
-		const interval = setInterval(()=>{
+		const interval = setInterval(() => {
 			animateColors();
-		},69)
+		}, 69);
 
-		setTimeout(()=>{
+		setTimeout(() => {
 			clearInterval(interval);
-		},300)
-	}
+		}, 300);
+	};
 
 	return (
 		<div className="container d-flex flex-column align-items-center justify-content-center mt-2">
@@ -164,10 +164,8 @@ const CreateGradient = () => {
 							</div>
 						</Form.Group>
 						<div className="d-grid gap-2">
-							<Button
-								variant="dark"
-								size="lg"
-								className={`shadow ${styles.copyBtn}`}
+							<Button 
+								className={`shadow bg-transparent border-none ${styles.copyBtn}`}
 								onClick={copyCssHandler}
 							>
 								Copy CSS
