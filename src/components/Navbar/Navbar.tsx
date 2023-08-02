@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import favicon from "../../assets/img/icons/favicon.svg";
+import favicon from "../../assets/img/icons/icon2.svg";
 
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
@@ -19,14 +19,13 @@ function CollapsibleExample() {
 		>
 			<Container>
 			<Navbar.Brand as={currentPath == '/' ? NavLink : NavLink} to="/" href="#" className=" d-flex align-items-center">
-					<img src={favicon} alt="Logo Crazy Gradients" />{" "}
+					<img src={favicon} alt="Logo GradientCraft" className=" mb-2" />
 					<p className="ms-2">GradientCraft</p>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
 						<Nav.Link href="#gradient-creator">Gradient creator</Nav.Link>
-						<Nav.Link href="#browse-gradients">Browse</Nav.Link>
 					</Nav>
 					<Nav>
 						<NavDropdown title="Find gradient" id="collasible-nav-dropdown">
