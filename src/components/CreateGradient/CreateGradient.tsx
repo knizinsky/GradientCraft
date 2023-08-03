@@ -104,7 +104,7 @@ const CreateGradient = () => {
 								<Form.Select
 									id="directionSelect"
 									onChange={changeDirectionHandler}
-									className="shadow-sm"
+									className={`shadow-sm ${styles.directionChanger}`}
 								>
 									<option value="to right">To right</option>
 									<option value="to bottom">To bottom</option>
@@ -159,7 +159,7 @@ const CreateGradient = () => {
 									rows={1}
 									value={`background: linear-gradient(${direction}, ${firstColor}, ${secondColor});`}
 									readOnly
-									className="shadow-sm"
+									className={`shadow-sm ${styles.textarea}`}
 								/>
 							</div>
 						</Form.Group>

@@ -42,7 +42,7 @@ function CollapsibleExample() {
 							</Nav>
 							<Nav>
 								<NavDropdown title="Find gradient" id="collasible-nav-dropdown">
-									<NavDropdown.Item style={{}} href="#red">Red</NavDropdown.Item>
+									<NavDropdown.Item href="#red">Red</NavDropdown.Item>
 									<NavDropdown.Item href="#yellow">Yellow</NavDropdown.Item>
 									<NavDropdown.Item href="#green">Green</NavDropdown.Item>
 									<NavDropdown.Item href="#blue">Blue</NavDropdown.Item>
