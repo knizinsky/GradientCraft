@@ -41,16 +41,16 @@
 	min-width: 40px;
 }
 .copyBtn {
-    background: linear-gradient(to right, #d5000017, #d500001f);
-    border: 1px solid rgb(115, 115, 115);
-    position: relative;
-    overflow: hidden;
-    z-index: 100;
-    color: white;
-    height: 48px;
-    border-radius: 7px;
-    font-size: 19px;
-    border-color: rgb(115, 115, 115)!important;
+  background: linear-gradient(to right, #d5000017, #d500001f);
+  border: 1px solid rgb(115, 115, 115);
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  color: white;
+  height: 48px;
+  border-radius: 7px;
+  font-size: 19px;
+  border-color: rgb(115, 115, 115)!important;
 }
 
 .copyBtn::after {
@@ -58,7 +58,7 @@
     color: white;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #d500005a, #d500006c);
+    background: linear-gradient(to right, #31000030, #35000042);
     position: absolute;
     top: 100%;
     left: 0;
@@ -66,6 +66,19 @@
     transition: 0.2s;
     z-index: -1;
 }
+
+.gradientOverlay {
+	content: "";
+	color: white;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 7px;
+	transition: 0.2s;
+	z-index: -1;
+  }
 
 .copyBtn:hover::after {
     content: '';

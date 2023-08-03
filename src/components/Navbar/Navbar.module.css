@@ -1,3 +1,7 @@
 .navbar{
     background: linear-gradient(to bottom, #100000, #000000);
 }
+
+a[data-rr-ui-dropdown-item] {
+    --bs-dropdown-link-active-bg: #100000;
+}

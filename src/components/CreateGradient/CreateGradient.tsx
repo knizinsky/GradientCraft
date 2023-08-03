@@ -6,8 +6,8 @@ import Alert from "react-bootstrap/Alert";
 import styles from "./CreateGradient.module.css";
 
 const CreateGradient = () => {
-	const [firstColor, setFirstColor] = useState("#e01010");
-	const [secondColor, setSecondColor] = useState("#c2930f");
+	const [firstColor, setFirstColor] = useState("#4d0d8c");
+	const [secondColor, setSecondColor] = useState("#c21d00");
 	const [direction, setDirection] = useState("to right");
 	const [show, setShow] = useState(false);
 
@@ -157,18 +157,24 @@ const CreateGradient = () => {
 								<Form.Control
 									as="textarea"
 									rows={1}
-									value={`background: linear-gradient(${direction}, ${firstColor}, ${secondColor})`}
+									value={`background: linear-gradient(${direction}, ${firstColor}, ${secondColor});`}
 									readOnly
 									className="shadow-sm"
 								/>
 							</div>
 						</Form.Group>
 						<div className="d-grid gap-2">
-							<Button 
+							<Button
 								className={`shadow bg-transparent border-none ${styles.copyBtn}`}
 								onClick={copyCssHandler}
 							>
 								Copy CSS
+								<span
+									className={styles.gradientOverlay}
+									style={{
+										background: `linear-gradient(${direction}, ${firstColor}, ${secondColor})`,
+									}}
+								/>
 							</Button>
 						</div>
 					</Form>

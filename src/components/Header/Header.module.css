@@ -50,7 +50,7 @@
 	position: absolute;
 	bottom: -30%;
 	left: 10%;
-	background: radial-gradient(closest-side, #c24f075b 2%, #00000000);
+	background: radial-gradient(closest-side, #c23c075b 2%, #00000000);
 	animation: rotate4 50s infinite forwards;
 	z-index: -1;
 }
