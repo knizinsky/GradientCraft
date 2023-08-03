@@ -15,6 +15,7 @@ import {
 	purpleGradients,
 	darkGradients,
 } from "./data/data";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
 	return (
@@ -105,6 +106,16 @@ function App() {
 					<>
 						<Navbar />
 						<MoreGradients />
+						<Footer />
+					</>
+				}
+			/>
+			<Route
+				path="*"
+				element={
+					<>
+						<Navbar />
+						<NotFound/>
 						<Footer />
 					</>
 				}
