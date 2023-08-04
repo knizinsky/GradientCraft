@@ -85,7 +85,7 @@ const GradientSection: React.FC<GradientsSectionProps> = (props) => {
 						);
 					})}
 				</div>
-				<div className="w-100 m-4 mb-5">
+				<div className=" m-4 mb-5">
 					<Link
 						to={`/${props.mainColor}`}
 						className={`fs-4 m-4 mb-5 text-light ${styles.link}`}

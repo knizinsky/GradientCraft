@@ -2,9 +2,11 @@ import React, {useState} from "react";
 import { Alert } from "react-bootstrap";
 import styles from "./GradientBlock.module.css";
 
-const GradientBlock: React.FC<{
+interface GradientBlockProps {
 	gradientData:string;
-}> = (props) => {
+}
+
+const GradientBlock: React.FC<GradientBlockProps> = (props) => {
     const [show, setShow] = useState(false);
 
     const copyHandler = () => {
